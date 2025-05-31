@@ -42,13 +42,15 @@ func _physics_process(_delta: float) -> void:
 		
 		h_axis = Input.get_axis("ui_left", "ui_right")
 		v_axis = Input.get_axis("ui_up", "ui_down")
-
+		
 		if (h_axis < 0 or velocity.x < 0):
+			player_sprite.play("walk")
 			if fliph:
 				player_sprite.flip_h = true
 				interract_area.position.x = 0
 			fliph = false
 		elif (h_axis > 0 or velocity.x > 0):
+			player_sprite.play("walk")
 			if !fliph:
 				player_sprite.flip_h = false
 				interract_area.position.x = 300
@@ -59,27 +61,14 @@ func _physics_process(_delta: float) -> void:
 		
 		#key based movement
 		direction.x = h_axis
-		direction.y = v_axis
-		direction = direction.normalized()
-		
-		if direction.length() > 0 or direction.y != 0:
-			player_sprite.play("walk")
-		
-		
-		if Input.is_action_pressed("run"):
-			player_sprite.play("run")
-			velocity = direction * SPEED * _delta * 2
+		if Input.is_action_pressed("ui_right") or Input.is_action_pressed("ui_left"):
+			velocity = direction * SPEED * _delta
 			moving_to_mouse = false
-
-		else:
-			if Input.is_action_pressed("ui_right") or Input.is_action_pressed("ui_left"):
-				velocity = direction * SPEED * _delta
-				moving_to_mouse = false
-
-			if Input.is_action_pressed("ui_down") or Input.is_action_pressed("ui_up"):
-				velocity = direction * SPEED * _delta
-				moving_to_mouse = false
-
+			
+		direction.y = v_axis
+		if Input.is_action_pressed("ui_down") or Input.is_action_pressed("ui_up"):
+			velocity = direction * SPEED * _delta
+			moving_to_mouse = false
 	move_and_slide()
 	##
 	## INVENTORY
