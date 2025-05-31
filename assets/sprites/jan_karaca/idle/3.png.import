@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf1hwi2vkts1b"
-path="res://.godot/imported/fbas_blank_sheet.png-6cffd94689eeb8cbfaaa8383f209fa4c.ctex"
+uid="uid://0iq7kfb5ya2d"
+path="res://.godot/imported/3.png-4239895e520391cd45923cf778d416c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprite/farmer base sheets/fbas_blank_sheet.png"
-dest_files=["res://.godot/imported/fbas_blank_sheet.png-6cffd94689eeb8cbfaaa8383f209fa4c.ctex"]
+source_file="res://assets/sprites/jan_karaca/idle/3.png"
+dest_files=["res://.godot/imported/3.png-4239895e520391cd45923cf778d416c3.ctex"]
 
 [params]
 

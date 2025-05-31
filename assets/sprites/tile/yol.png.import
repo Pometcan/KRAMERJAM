@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uprph2uh7wei"
-path="res://.godot/imported/lamba.png-ac9202c2f1605a99054b58b9303fb8e0.ctex"
+uid="uid://c0phqtjn8ogr3"
+path="res://.godot/imported/yol.png-3223518ba2030741313b7cb0743f4d22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprite/lamba.png"
-dest_files=["res://.godot/imported/lamba.png-ac9202c2f1605a99054b58b9303fb8e0.ctex"]
+source_file="res://assets/sprites/tile/yol.png"
+dest_files=["res://.godot/imported/yol.png-3223518ba2030741313b7cb0743f4d22.ctex"]
 
 [params]
 

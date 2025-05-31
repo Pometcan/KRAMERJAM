@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcpv1g6monmue"
-path="res://.godot/imported/cevizagasi.png-01870d06e958b8d19c85d7fb44c8bcb0.ctex"
+uid="uid://uprph2uh7wei"
+path="res://.godot/imported/lamba.png-375aec952572ff5b0e2345e1b9bb5764.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprite/cevizagasi.png"
-dest_files=["res://.godot/imported/cevizagasi.png-01870d06e958b8d19c85d7fb44c8bcb0.ctex"]
+source_file="res://assets/sprites/lamba.png"
+dest_files=["res://.godot/imported/lamba.png-375aec952572ff5b0e2345e1b9bb5764.ctex"]
 
 [params]
 
