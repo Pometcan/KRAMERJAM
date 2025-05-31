@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf2xwufg3ac0g"
-path="res://.godot/imported/2.png-db029c7511a78a590089104873ceb9aa.ctex"
+uid="uid://lmsjytns2hp3"
+path="res://.godot/imported/jankaraca.png-b9d0226d0aafa8a05fc7e3c6e45382f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/jan_karaca/idle/2.png"
-dest_files=["res://.godot/imported/2.png-db029c7511a78a590089104873ceb9aa.ctex"]
+source_file="res://jankaraca.png"
+dest_files=["res://.godot/imported/jankaraca.png-b9d0226d0aafa8a05fc7e3c6e45382f8.ctex"]
 
 [params]
 
