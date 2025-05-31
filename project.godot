@@ -11,9 +11,17 @@ config_version=5
 [application]
 
 config/name="kramerjam"
-run/main_scene="uid://cqsjkw1tcsisu"
+run/main_scene="uid://ckbbbdcm3pxe"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [input]
 

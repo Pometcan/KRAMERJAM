@@ -1,0 +1,93 @@
+[gd_scene load_steps=25 format=3 uid="uid://ckbbbdcm3pxe"]
+
+[ext_resource type="Texture2D" uid="uid://b3ybktsjsts6b" path="res://assets/sprites/tile/kaldirim1.png" id="1_tdkr5"]
+[ext_resource type="Texture2D" uid="uid://d3i83fma8c5ib" path="res://assets/sprites/tile/cim.png" id="2_tdkr5"]
+[ext_resource type="Texture2D" uid="uid://cwxdrwodxe01y" path="res://assets/sprites/tile/kaldirim2.1.png" id="3_emkji"]
+[ext_resource type="Texture2D" uid="uid://bx5gb5oa7btd5" path="res://assets/sprites/tile/kaldirimyukar1.png" id="4_go1ay"]
+[ext_resource type="Texture2D" uid="uid://c0phqtjn8ogr3" path="res://assets/sprites/tile/yol.png" id="5_j1x85"]
+[ext_resource type="Texture2D" uid="uid://drohh5bnwqxvy" path="res://assets/sprites/tile/yolSerit.png" id="6_gg37g"]
+[ext_resource type="Texture2D" uid="uid://8ix8exkgvjoh" path="res://assets/sprites/tile/şeritaltyol.png" id="7_if6ux"]
+[ext_resource type="Texture2D" uid="uid://dp8sjrq3bth8g" path="res://assets/sprites/tile/şeritbirleşim4.png" id="8_jnybu"]
+[ext_resource type="Texture2D" uid="uid://bdemmrfx1oyq6" path="res://assets/sprites/tile/şeritdikey.png" id="9_yiqqw"]
+[ext_resource type="Texture2D" uid="uid://b34xnt4gfpho6" path="res://assets/sprites/tile/şerityaya.png" id="10_mqdlb"]
+[ext_resource type="PackedScene" uid="uid://bn5m0b686ecwt" path="res://scenes/entities/player.tscn" id="11_6c0iu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qghny"]
+texture = ExtResource("1_tdkr5")
+texture_region_size = Vector2i(1024, 1024)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rim7t"]
+texture = ExtResource("2_tdkr5")
+texture_region_size = Vector2i(1024, 1024)
+0:0/0 = 0
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_6k0k0"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t6g1p"]
+texture = SubResource("CanvasTexture_6k0k0")
+texture_region_size = Vector2i(1024, 1024)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pxnc3"]
+texture = ExtResource("3_emkji")
+texture_region_size = Vector2i(1024, 1024)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l2jgh"]
+texture = ExtResource("4_go1ay")
+texture_region_size = Vector2i(1024, 1024)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1xtu2"]
+texture = ExtResource("5_j1x85")
+texture_region_size = Vector2i(1024, 1024)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qoxw4"]
+texture = ExtResource("6_gg37g")
+texture_region_size = Vector2i(1024, 1024)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nuxrw"]
+texture = ExtResource("7_if6ux")
+texture_region_size = Vector2i(1024, 1024)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j62ub"]
+texture = ExtResource("8_jnybu")
+texture_region_size = Vector2i(1024, 1024)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e3mt2"]
+texture = ExtResource("9_yiqqw")
+texture_region_size = Vector2i(1024, 1024)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e86xh"]
+texture = ExtResource("10_mqdlb")
+texture_region_size = Vector2i(1024, 1024)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_l80vy"]
+tile_size = Vector2i(1024, 1024)
+sources/1 = SubResource("TileSetAtlasSource_qghny")
+sources/2 = SubResource("TileSetAtlasSource_pxnc3")
+sources/3 = SubResource("TileSetAtlasSource_l2jgh")
+sources/4 = SubResource("TileSetAtlasSource_1xtu2")
+sources/5 = SubResource("TileSetAtlasSource_qoxw4")
+sources/6 = SubResource("TileSetAtlasSource_nuxrw")
+sources/7 = SubResource("TileSetAtlasSource_j62ub")
+sources/8 = SubResource("TileSetAtlasSource_e3mt2")
+sources/9 = SubResource("TileSetAtlasSource_e86xh")
+sources/10 = SubResource("TileSetAtlasSource_rim7t")
+sources/12 = SubResource("TileSetAtlasSource_t6g1p")
+
+[node name="Gulhane" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_l80vy")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65537, 1, 0, -131072, 1, 0, -65535, 1, 1342177280, 1, 1, 1342177280, -131073, 10, 0, -196608, 10, 0)
+
+[node name="Player" parent="." instance=ExtResource("11_6c0iu")]

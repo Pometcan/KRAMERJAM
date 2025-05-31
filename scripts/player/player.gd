@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Player
 
 const SPEED := 100 * 500
 var direction := Vector2(0.0,0.0)
@@ -6,10 +7,11 @@ var h_axis := 0.0
 var v_axis := 0.0
 var fliph := false
 var mouse_pos := position
-var moving_to_mouse := false
 var friction := 0.05
+var moving_to_mouse := false
 var in_bounds := true
 var original_scale := scale
+var able_to_move := true
 var inventory = []
 
 @onready var player_sprite: AnimatedSprite2D = $playerSprite
@@ -22,9 +24,9 @@ func _physics_process(_delta: float) -> void:
 	###
 	###MOVEMENT
 	###
-	if not moving_to_mouse:
+	if able_to_move and not moving_to_mouse:
 		velocity = Vector2(0,0)
-	if in_bounds:
+	if able_to_move and in_bounds:
 		#mouse movement
 		if Input.is_action_pressed("left_click"):
 			mouse_pos = get_global_mouse_position()

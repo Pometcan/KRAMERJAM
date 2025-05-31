@@ -1,8 +1,9 @@
 extends Area2D
 
+@onready var player: Player = $"../Player"
+
 var i = 0
 var area_names = [""]
-var player
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
@@ -14,8 +15,10 @@ func _process(_delta: float) -> void:
 		area_names[i] = area.name
 		print(area_names)
 		i += 1
-		#if area.name == "interractArea":
-			#player = area.get_node("./Player")
-			#if "interractArea" in area_names and Input.is_action_pressed("interract"):
-				#player.inventory = ["test"]
-		queue_free()
+		if area.name == "interractArea":
+			if "interractArea" in area_names and Input.is_action_pressed("interract"):
+				player.able_to_move = false
+				player.velocity = Vector2.ZERO
+				
+				player.direction = Vector2.ZERO
+				queue_free()
