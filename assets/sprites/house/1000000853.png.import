@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf2xwufg3ac0g"
-path="res://.godot/imported/2.png-db029c7511a78a590089104873ceb9aa.ctex"
+uid="uid://icp6aujv0lfl"
+path="res://.godot/imported/1000000853.png-b8ae20045340e4457a1050353d32403f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/jan_karaca/idle/2.png"
-dest_files=["res://.godot/imported/2.png-db029c7511a78a590089104873ceb9aa.ctex"]
+source_file="res://assets/sprites/house/1000000853.png"
+dest_files=["res://.godot/imported/1000000853.png-b8ae20045340e4457a1050353d32403f.ctex"]
 
 [params]
 

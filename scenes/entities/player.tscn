@@ -1,43 +1,57 @@
-[gd_scene load_steps=9 format=3 uid="uid://bn5m0b686ecwt"]
+[gd_scene load_steps=15 format=3 uid="uid://bn5m0b686ecwt"]
 
 [ext_resource type="Script" uid="uid://bek758c1i36bq" path="res://scripts/player/player.gd" id="1_ucweq"]
-[ext_resource type="Texture2D" uid="uid://mdxlm7ea5hnw" path="res://assets/sprites/jan_karaca/idle/1.png" id="2_d4qa6"]
-[ext_resource type="Texture2D" uid="uid://yxtwa442lfk0" path="res://assets/sprites/jan_karaca/idle/2.png" id="3_ss7kx"]
-[ext_resource type="Texture2D" uid="uid://0iq7kfb5ya2d" path="res://assets/sprites/jan_karaca/idle/3.png" id="4_dnykm"]
-[ext_resource type="Texture2D" uid="uid://dpp0nhcpy0i5o" path="res://assets/sprites/jan_karaca/idle/4.png" id="5_c5rqy"]
+[ext_resource type="Texture2D" uid="uid://ioa8cyt5ygep" path="res://assets/sprites/jan_karaca/idle/1.png" id="2_d4qa6"]
+[ext_resource type="Texture2D" uid="uid://cqvjo5n603ge4" path="res://assets/sprites/jan_karaca/run/yürüyüş1.png" id="2_ss7kx"]
+[ext_resource type="Texture2D" uid="uid://dix6kmqb1g3rt" path="res://assets/sprites/jan_karaca/idle/WALK1.png" id="3_42nxq"]
+[ext_resource type="Texture2D" uid="uid://c58fyiqhijd8n" path="res://assets/sprites/jan_karaca/run/yürüyüş2.png" id="3_dnykm"]
+[ext_resource type="Texture2D" uid="uid://ca7ruwsfl8vic" path="res://assets/sprites/jan_karaca/idle/WALK3.png" id="4_5u6hq"]
+[ext_resource type="Texture2D" uid="uid://mrmkwuqjyllg" path="res://assets/sprites/jan_karaca/run/yürüyüş3.png" id="4_c5rqy"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d4qa6"]
+load_path = "res://.godot/imported/1.png-155e55cc2118c3a4840a87bea189a9d2.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ss7kx"]
+load_path = "res://.godot/imported/2.png-db029c7511a78a590089104873ceb9aa.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dnykm"]
+load_path = "res://.godot/imported/3.png-4239895e520391cd45923cf778d416c3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c5rqy"]
+load_path = "res://.godot/imported/4.png-7f927648491b22a7f99bf8ea7937ef7a.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dnykm"]
 animations = [{
 "frames": [{
 "duration": 3.0,
-"texture": ExtResource("2_d4qa6")
+"texture": SubResource("CompressedTexture2D_d4qa6")
 }, {
 "duration": 3.0,
-"texture": ExtResource("3_ss7kx")
+"texture": SubResource("CompressedTexture2D_ss7kx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_dnykm")
+"texture": SubResource("CompressedTexture2D_dnykm")
 }, {
 "duration": 3.0,
-"texture": ExtResource("5_c5rqy")
+"texture": SubResource("CompressedTexture2D_c5rqy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_dnykm")
+"texture": SubResource("CompressedTexture2D_dnykm")
 }, {
 "duration": 3.0,
-"texture": ExtResource("3_ss7kx")
+"texture": SubResource("CompressedTexture2D_ss7kx")
 }, {
 "duration": 3.0,
-"texture": ExtResource("2_d4qa6")
+"texture": SubResource("CompressedTexture2D_d4qa6")
 }, {
 "duration": 3.0,
-"texture": ExtResource("3_ss7kx")
+"texture": SubResource("CompressedTexture2D_ss7kx")
 }, {
 "duration": 3.0,
-"texture": ExtResource("2_d4qa6")
+"texture": SubResource("CompressedTexture2D_d4qa6")
 }, {
 "duration": 3.0,
-"texture": ExtResource("3_ss7kx")
+"texture": SubResource("CompressedTexture2D_ss7kx")
 }],
 "loop": true,
 "name": &"idle",
@@ -45,11 +59,37 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_c5rqy")
+"texture": ExtResource("2_ss7kx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dnykm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_c5rqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dnykm")
+}],
+"loop": true,
+"name": &"run",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_d4qa6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_42nxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_d4qa6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5u6hq")
 }],
 "loop": true,
 "name": &"walk",
-"speed": 5.0
+"speed": 8.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ss7kx"]
@@ -64,8 +104,9 @@ script = ExtResource("1_ucweq")
 [node name="playerSprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -2)
 sprite_frames = SubResource("SpriteFrames_dnykm")
-animation = &"idle"
+animation = &"run"
 autoplay = "idle"
+frame_progress = 0.988386
 
 [node name="interractArea" type="Area2D" parent="playerSprite"]
 position = Vector2(0, 2)
