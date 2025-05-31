@@ -11,7 +11,11 @@
 [ext_resource type="Texture2D" uid="uid://daa5uu1vyktxy" path="res://assets/sprites/house/binastripeddark.png" id="9_c2fwb"]
 [ext_resource type="Texture2D" uid="uid://l5c1mlahcvb6" path="res://assets/sprites/house/binastripedlight.png" id="10_fy668"]
 [ext_resource type="Texture2D" uid="uid://clhjrupey4rcn" path="res://assets/sprites/house/pencere.png" id="11_wgg2v"]
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://icp6aujv0lfl" path="res://assets/sprites/house/1000000853.png" id="12_h3at4"]
+=======
+[ext_resource type="Texture2D" path="res://assets/sprites/house/1000000853.png" id="12_h3at4"]
+>>>>>>> Stashed changes
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5vxlb"]
 texture = ExtResource("1_wplmo")
