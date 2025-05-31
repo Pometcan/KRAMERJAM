@@ -1,10 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://bje58hth8nruf"]
+[gd_scene load_steps=17 format=3 uid="uid://bje58hth8nruf"]
 
 [ext_resource type="Script" uid="uid://nxe856y36r3k" path="res://scripts/collectible/collectible.gd" id="1_xyy1n"]
 [ext_resource type="Texture2D" uid="uid://kmw362xqxt1a" path="res://assets/sprites/coin.png" id="2_y3nx4"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mx75e"]
-size = Vector2(10, 10)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jlsqs"]
 atlas = ExtResource("2_y3nx4")
@@ -102,19 +99,15 @@ animations = [{
 size = Vector2(30, 32)
 
 [node name="item" type="Area2D"]
+
+[node name="Pickup" type="Area2D" parent="."]
 script = ExtResource("1_xyy1n")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_mx75e")
-debug_color = Color(0.911127, 0.00010146, 0.727674, 0.42)
-
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Pickup"]
+scale = Vector2(10, 10)
 sprite_frames = SubResource("SpriteFrames_ye8ib")
 autoplay = "default"
 
-[node name="Pickup" type="Area2D" parent="."]
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pickup"]
+scale = Vector2(10, 10)
 shape = SubResource("RectangleShape2D_6y5bh")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]

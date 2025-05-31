@@ -55,10 +55,6 @@ layer_0/tile_data = PackedInt32Array(65534, 4, 0, 65535, 4, 0, 0, 4, 0, 1, 4, 0,
 
 [node name="Player" parent="." instance=ExtResource("1_xnrmx")]
 
-[node name="item" parent="." instance=ExtResource("2_wplmo")]
-position = Vector2(90, 32)
-script = null
-
 [node name="Ground" type="Area2D" parent="."]
 visible = false
 position = Vector2(198, -16)
@@ -77,3 +73,9 @@ debug_color = Color(0.609772, 0.522184, 0.380033, 0.42)
 position = Vector2(-232, 5)
 shape = SubResource("RectangleShape2D_vcsgt")
 debug_color = Color(0.609772, 0.522184, 0.380033, 0.42)
+
+[node name="item" parent="." instance=ExtResource("2_wplmo")]
+position = Vector2(-1427, 47)
+
+[node name="item2" parent="." instance=ExtResource("2_wplmo")]
+position = Vector2(-1001, -486)
