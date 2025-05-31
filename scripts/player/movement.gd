@@ -8,7 +8,7 @@ var fliph := true
 var mouse_pos := position
 var moving_to_mouse := false
 var friction := 0.05
-var in_bounds := true
+@export var in_bounds := true
 @onready var player_sprite: AnimatedSprite2D = $playerSprite
 
 func _ready() -> void:

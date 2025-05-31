@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dj2ce7kp2o26c"
-path="res://.godot/imported/kaldirim.png-39fe578af75bed1e9b427e57bf10ded4.ctex"
+uid="uid://b3ybktsjsts6b"
+path="res://.godot/imported/kaldirim1.png-0b85d66ead41658a44b07ceef8fb6aa1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/tile/kaldirim.png"
-dest_files=["res://.godot/imported/kaldirim.png-39fe578af75bed1e9b427e57bf10ded4.ctex"]
+source_file="res://assets/sprites/tile/kaldirim1.png"
+dest_files=["res://.godot/imported/kaldirim1.png-0b85d66ead41658a44b07ceef8fb6aa1.ctex"]
 
 [params]
 
