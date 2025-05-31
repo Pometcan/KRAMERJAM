@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED := 100 * 80
+const SPEED := 100 * 500
 var direction := Vector2(0.0,0.0)
 var h_axis := 0.0
 var v_axis := 0.0
@@ -8,7 +8,7 @@ var fliph := true
 var mouse_pos := position
 var moving_to_mouse := false
 var friction := 0.05
-@export var in_bounds := true
+var in_bounds := true
 @onready var player_sprite: AnimatedSprite2D = $playerSprite
 
 func _ready() -> void:
@@ -37,10 +37,10 @@ func _physics_process(_delta: float) -> void:
 		
 		if (h_axis < 0 or velocity.x < 0):
 			player_sprite.play("walk")
-			fliph = true
+			fliph = false
 		elif (h_axis > 0 or velocity.x > 0):
 			player_sprite.play("walk")
-			fliph = false
+			fliph = true
 		else: 
 			player_sprite.play("idle")
 		player_sprite.set_flip_h(fliph)
