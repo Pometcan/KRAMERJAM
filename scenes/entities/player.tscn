@@ -59,19 +59,19 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_c5rqy"]
-radius = 3.0
+radius = 130.138
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_ucweq")
 
 [node name="playerSprite" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -8)
+position = Vector2(0, -2)
 sprite_frames = SubResource("SpriteFrames_dnykm")
 animation = &"walk"
 autoplay = "idle"
 
 [node name="walkCollision" type="CollisionShape2D" parent="."]
-position = Vector2(0, -1)
+position = Vector2(2, 363)
 shape = SubResource("CircleShape2D_c5rqy")
 
 [node name="Camera2D" type="Camera2D" parent="."]
