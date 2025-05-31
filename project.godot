@@ -64,6 +64,15 @@ interract={
 
 pointing/canvas_textures/default_texture_filter=1
 
+[layer_names]
+
+2d_physics/layer_1="walkable"
+2d_physics/layer_2="Unwalkable"
+2d_physics/layer_3="Decoration"
+2d_physics/layer_4="Collectiables"
+2d_physics/layer_5="Characters "
+2d_physics/layer_6="Player"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
