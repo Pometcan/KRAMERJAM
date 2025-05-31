@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca7ruwsfl8vic"
-path="res://.godot/imported/WALK3.png-55300b8fd9e311c2f3e12892c9a64acc.ctex"
+uid="uid://mrmkwuqjyllg"
+path="res://.godot/imported/yürüyüş3.png-3178c39a64fcfbaec1b7163cec4acf82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/jan_karaca/idle/WALK3.png"
-dest_files=["res://.godot/imported/WALK3.png-55300b8fd9e311c2f3e12892c9a64acc.ctex"]
+source_file="res://assets/sprites/ufuk/run/yürüyüş3.png"
+dest_files=["res://.godot/imported/yürüyüş3.png-3178c39a64fcfbaec1b7163cec4acf82.ctex"]
 
 [params]
 

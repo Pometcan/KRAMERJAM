@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mrmkwuqjyllg"
-path="res://.godot/imported/yürüyüş3.png-0a5f67513bd5ee5861d452553a4cb368.ctex"
+uid="uid://bhimcgsgleyfv"
+path="res://.godot/imported/arazi.png-38c3b9fb736c674b59c252d5260edefb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/jan_karaca/run/yürüyüş3.png"
-dest_files=["res://.godot/imported/yürüyüş3.png-0a5f67513bd5ee5861d452553a4cb368.ctex"]
+source_file="res://assets/sprites/tile/arazi.png"
+dest_files=["res://.godot/imported/arazi.png-38c3b9fb736c674b59c252d5260edefb.ctex"]
 
 [params]
 

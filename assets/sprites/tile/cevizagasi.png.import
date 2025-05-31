@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqvjo5n603ge4"
-path="res://.godot/imported/yürüyüş1.png-178dfef00f7908edbd9c3ee697a6042b.ctex"
+uid="uid://do38y34dkp44d"
+path="res://.godot/imported/cevizagasi.png-09527e0aedd58ddfc17f9c30bab1422e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/jan_karaca/run/yürüyüş1.png"
-dest_files=["res://.godot/imported/yürüyüş1.png-178dfef00f7908edbd9c3ee697a6042b.ctex"]
+source_file="res://assets/sprites/tile/cevizagasi.png"
+dest_files=["res://.godot/imported/cevizagasi.png-09527e0aedd58ddfc17f9c30bab1422e.ctex"]
 
 [params]
 

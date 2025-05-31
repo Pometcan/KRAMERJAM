@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnn5j1bgnt632"]
+
+[ext_resource type="Texture2D" uid="uid://do38y34dkp44d" path="res://assets/sprites/tile/cevizagasi.png" id="1_rn2re"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rn2re"]
+radius = 58.0
+height = 238.0
+
+[node name="Agac" type="StaticBody2D"]
+z_index = 1
+y_sort_enabled = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-29, -51)
+rotation = 1.5708
+scale = Vector2(2, 2)
+shape = SubResource("CapsuleShape2D_rn2re")
+
+[node name="Cevizagasi" type="Sprite2D" parent="."]
+position = Vector2(0, -345)
+scale = Vector2(2, 2)
+texture = ExtResource("1_rn2re")
+offset = Vector2(42, -457.5)
