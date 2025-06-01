@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://l5c1mlahcvb6" path="res://assets/sprites/house/binastripedlight.png" id="10_fy668"]
 [ext_resource type="Texture2D" uid="uid://clhjrupey4rcn" path="res://assets/sprites/house/pencere.png" id="11_wgg2v"]
 [ext_resource type="Texture2D" uid="uid://icp6aujv0lfl" path="res://assets/sprites/house/1000000853.png" id="12_h3at4"]
-[ext_resource type="Texture2D" uid="uid://bilx71f76mw55" path="res://assets/sprites/decor/thumbnail_dur.png" id="13_if38b"]
+[ext_resource type="Texture2D" uid="uid://bilx71f76mw55" path="res://assets/sprites/thumbnail_dur.png" id="13_if38b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fl1ji"]
 texture = ExtResource("1_wplmo")

@@ -16,7 +16,7 @@ var inventory = []
 var running = false
 
 @onready var player_sprite: AnimatedSprite2D = $playerSprite
-@onready var interract_area: Area2D = $playerSprite/interractArea
+@onready var interract_area: Area2D = $interractArea
 
 func _ready() -> void:
 	pass

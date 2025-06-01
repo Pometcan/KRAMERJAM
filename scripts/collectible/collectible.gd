@@ -19,6 +19,5 @@ func _process(_delta: float) -> void:
 			if "interractArea" in area_names and Input.is_action_pressed("interract"):
 				player.able_to_move = false
 				player.velocity = Vector2.ZERO
-				
 				player.direction = Vector2.ZERO
 				queue_free()

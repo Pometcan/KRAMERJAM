@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bilx71f76mw55"
-path="res://.godot/imported/thumbnail_dur.png-bb01540692c59b544a2a6f30a21a07af.ctex"
+uid="uid://s25kubaac466"
+path="res://.godot/imported/WAaaaaLK3.png-8f8c3ee5636c39f051cca88e28a6a1e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/thumbnail_dur.png"
-dest_files=["res://.godot/imported/thumbnail_dur.png-bb01540692c59b544a2a6f30a21a07af.ctex"]
+source_file="res://assets/sprites/ufuk/idle/WAaaaaLK3.png"
+dest_files=["res://.godot/imported/WAaaaaLK3.png-8f8c3ee5636c39f051cca88e28a6a1e0.ctex"]
 
 [params]
 

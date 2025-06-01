@@ -1,12 +1,12 @@
 [gd_scene load_steps=15 format=3 uid="uid://bn5m0b686ecwt"]
 
 [ext_resource type="Script" uid="uid://bek758c1i36bq" path="res://scripts/player/player.gd" id="1_ucweq"]
-[ext_resource type="Texture2D" uid="uid://ioa8cyt5ygep" path="res://assets/sprites/ufuk/idle/1.png" id="2_d4qa6"]
 [ext_resource type="Texture2D" uid="uid://cqvjo5n603ge4" path="res://assets/sprites/ufuk/run/yürüyüş1.png" id="2_ss7kx"]
 [ext_resource type="Texture2D" uid="uid://dix6kmqb1g3rt" path="res://assets/sprites/ufuk/idle/WALK1.png" id="3_42nxq"]
 [ext_resource type="Texture2D" uid="uid://c58fyiqhijd8n" path="res://assets/sprites/ufuk/run/yürüyüş2.png" id="3_dnykm"]
 [ext_resource type="Texture2D" uid="uid://ca7ruwsfl8vic" path="res://assets/sprites/ufuk/idle/WALK3.png" id="4_5u6hq"]
 [ext_resource type="Texture2D" uid="uid://mrmkwuqjyllg" path="res://assets/sprites/ufuk/run/yürüyüş3.png" id="4_c5rqy"]
+[ext_resource type="Texture2D" uid="uid://bmupffjsxvo77" path="res://assets/sprites/ufuk/idle/WALK2.png" id="6_ss7kx"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d4qa6"]
 load_path = "res://.godot/imported/1.png-155e55cc2118c3a4840a87bea189a9d2.ctex"
@@ -76,27 +76,27 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_d4qa6")
+"texture": ExtResource("4_5u6hq")
 }, {
 "duration": 1.0,
 "texture": ExtResource("3_42nxq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_d4qa6")
+"texture": ExtResource("6_ss7kx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_5u6hq")
+"texture": ExtResource("3_42nxq")
 }],
 "loop": true,
 "name": &"walk",
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ss7kx"]
-size = Vector2(300, 963)
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_c5rqy"]
 radius = 130.138
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ss7kx"]
+size = Vector2(300, 963)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_ucweq")
@@ -104,15 +104,8 @@ script = ExtResource("1_ucweq")
 [node name="playerSprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -2)
 sprite_frames = SubResource("SpriteFrames_dnykm")
-animation = &"run"
+animation = &"walk"
 autoplay = "idle"
-
-[node name="interractArea" type="Area2D" parent="playerSprite"]
-position = Vector2(0, 2)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="playerSprite/interractArea"]
-position = Vector2(-150, 0)
-shape = SubResource("RectangleShape2D_ss7kx")
 
 [node name="walkCollision" type="CollisionShape2D" parent="."]
 position = Vector2(0, 363)
@@ -121,3 +114,9 @@ shape = SubResource("CircleShape2D_c5rqy")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -7)
 zoom = Vector2(0.2, 0.2)
+
+[node name="interractArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interractArea"]
+position = Vector2(-150, 0)
+shape = SubResource("RectangleShape2D_ss7kx")

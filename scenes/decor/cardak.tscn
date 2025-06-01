@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://cucadinqdwtx1"]
+
+[ext_resource type="Texture2D" uid="uid://hdpyuj4yxfh3" path="res://assets/sprites/decor/cardakcati.png" id="1_x1buo"]
+[ext_resource type="Texture2D" uid="uid://caanoeqrf08nk" path="res://assets/sprites/decor/cardakalt.png" id="2_nrfrf"]
+[ext_resource type="Texture2D" uid="uid://xkhrou0qdqx8" path="res://assets/sprites/decor/cardakgolge.png" id="3_swcfl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x1buo"]
+size = Vector2(5.33, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nrfrf"]
+size = Vector2(4.93, 20)
+
+[node name="Carkad" type="StaticBody2D"]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(712, -634)
+scale = Vector2(100, 100)
+shape = SubResource("RectangleShape2D_x1buo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-763.5, -645)
+scale = Vector2(100, 100)
+shape = SubResource("RectangleShape2D_nrfrf")
+
+[node name="Cardakcati" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(6, -1534)
+texture = ExtResource("1_x1buo")
+
+[node name="Cardakalt" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(0, -2391)
+texture = ExtResource("2_nrfrf")
+offset = Vector2(-6, 857)
+
+[node name="Cardakgolge" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(-2, -1534)
+texture = ExtResource("3_swcfl")
