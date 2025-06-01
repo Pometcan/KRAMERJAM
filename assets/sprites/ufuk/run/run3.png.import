@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx7hlffd6i0s6"
-path="res://.godot/imported/4.png-d29f2ca858cf763545d394d97028b2a3.ctex"
+uid="uid://mrmkwuqjyllg"
+path="res://.godot/imported/run3.png-90bb5c9984041a5009cff51adf3403d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ufuk/idle/4.png"
-dest_files=["res://.godot/imported/4.png-d29f2ca858cf763545d394d97028b2a3.ctex"]
+source_file="res://assets/sprites/ufuk/run/run3.png"
+dest_files=["res://.godot/imported/run3.png-90bb5c9984041a5009cff51adf3403d4.ctex"]
 
 [params]
 

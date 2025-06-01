@@ -17,20 +17,21 @@ var running = false
 
 @onready var player_sprite: AnimatedSprite2D = $playerSprite
 @onready var interract_area: Area2D = $interractArea
+var form = 1
 
 func _ready() -> void:
 	pass
 	
 func _physics_process(_delta: float) -> void:
 	###
-	###MOVEMENTw
+	###MOVEMENT
 	###
-	if velocity.length() > (direction * SPEED * _delta).length():
-		player_sprite.play("run")
+	if velocity.length() >= 2000:
+		player_sprite.play("run_"+str(form))
 	elif velocity.length() != 0:
-		player_sprite.play("walk")
+		player_sprite.play("walk_"+str(form))
 	else:			
-		player_sprite.play("idle")
+		player_sprite.play("idle_"+str(form))
 
 	if Input.is_action_pressed("run"):
 		running = true
@@ -99,5 +100,7 @@ func _physics_process(_delta: float) -> void:
 			moving_to_mouse = false
 
 	move_and_slide()
+	if Input.is_action_just_pressed("transform"):
+		form += 1
 	
 	
