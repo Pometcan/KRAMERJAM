@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://3jjw4lweasog"]
+
+[ext_resource type="Script" uid="uid://b0dcdwbgd2twn" path="res://scenes/levels/radio.gd" id="1_j5b0r"]
+[ext_resource type="AudioStream" uid="uid://ewioucwncpu2" path="res://assets/sounds/69abisoft_radyo.wav" id="3_ih73b"]
+
+[node name="Radiopark" type="Node2D"]
+script = ExtResource("1_j5b0r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ih73b")
+volume_db = 2.0
+max_distance = 10000.0
+attenuation = 1.03526

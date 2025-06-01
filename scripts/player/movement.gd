@@ -9,7 +9,10 @@ var mouse_pos := position
 var moving_to_mouse := false
 var friction := 0.05
 var in_bounds := true
+var is_ready_cooldown = true
 @onready var player_sprite: AnimatedSprite2D = $playerSprite
+@onready var transformationsound: AudioStreamPlayer2D = $Transformationsound
+@onready var transformationfailsound: AudioStreamPlayer2D = $Transformationfailsound
 
 func _ready() -> void:
 	pass
@@ -18,6 +21,13 @@ func _physics_process(_delta: float) -> void:
 	if not moving_to_mouse:
 		velocity = Vector2(0,0)
 	if in_bounds:
+		if Input.is_action_pressed("transform") and is_ready_cooldown:
+			transformationsound.play()
+			is_ready_cooldown = false
+			$Cooldowntimer.start()
+		if Input.is_action_pressed("transform"): 
+			transformationfailsound.play()
+			pass
 		#mouse movement
 		if Input.is_action_pressed("left_click"):
 			mouse_pos = get_global_mouse_position()
@@ -57,3 +67,8 @@ func _physics_process(_delta: float) -> void:
 			moving_to_mouse = false
 		
 	move_and_slide()
+
+func _on_cooldowntimer_timeout() -> void:
+	is_ready_cooldown = true
+
+	pass # Replace with function body.

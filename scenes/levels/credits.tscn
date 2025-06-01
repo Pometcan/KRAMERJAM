@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://nfx2dnfc353s"]
+[gd_scene load_steps=4 format=3 uid="uid://nfx2dnfc353s"]
 
 [ext_resource type="Script" uid="uid://1fun3x8seq7l" path="res://scenes/levels/credits.gd" id="1_kxfi0"]
+[ext_resource type="Texture2D" uid="uid://bkayk0660q0rn" path="res://assets/ui_main_menu_design/Teamphoto.png" id="2_fhg1p"]
 
 [sub_resource type="Theme" id="Theme_2wlhp"]
 
@@ -31,22 +32,38 @@ theme_override_constants/margin_bottom = 80
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_direction = 2
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_constants/separation = 20
+theme_override_constants/separation = 0
 alignment = 1
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+texture = ExtResource("2_fhg1p")
+expand_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
 text = "Uğur Dikici - Game Design, Programmer
 Şevki Buğra Düzyol - 2D Artist
 MehmetCan Polat - Programmer 
 Anıl Uzun - Programmer, Game Designer
-İlker Dündar - 2D Artist 
-"
+İlker Dündar - 2D Artist "
 
-[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 6
 text = "Menüye Dön"
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "YARDIMCI OLANLAR
+KRAMER JAM EKİBİNE TEŞEKKÜRLER
+SESLER - Kuş Gözlem Hanı Ekibi"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]

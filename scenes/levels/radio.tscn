@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bw54po62u6c8y"]
+
+[ext_resource type="Script" uid="uid://b0dcdwbgd2twn" path="res://scenes/levels/radio.gd" id="1_chabs"]
+[ext_resource type="AudioStream" uid="uid://dkhtl7k5cl4y6" path="res://assets/music/time_for_adventure.mp3" id="1_knooa"]
+[ext_resource type="AudioStream" uid="uid://cey4uhp568fhd" path="res://assets/sounds/69abisoft_radyo.wav" id="3_v6008"]
+
+[node name="Radiopark" type="Node2D"]
+script = ExtResource("1_chabs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_knooa")
+volume_db = 10.0
+max_distance = 5000.0
+attenuation = 1.03526
+
+[node name="Radio giriş" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_v6008")

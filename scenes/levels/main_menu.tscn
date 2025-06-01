@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b7nrpsnu3sgix"]
+[gd_scene load_steps=9 format=3 uid="uid://b7nrpsnu3sgix"]
 
 [ext_resource type="Script" uid="uid://bl4w8cl511frb" path="res://scenes/levels/main_menu.gd" id="1_721jg"]
 [ext_resource type="Texture2D" uid="uid://bkt2r7al8ssno" path="res://assets/menu asset for now/title.png" id="1_leamy"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://nfx2dnfc353s" path="res://scenes/levels/credits.tscn" id="3_keln3"]
 [ext_resource type="PackedScene" uid="uid://b70tpa0ncriok" path="res://scenes/levels/settings.tscn" id="4_crctu"]
 [ext_resource type="Texture2D" uid="uid://b15e2p3nii2n7" path="res://assets/sprites/cevizagasi %30.png" id="4_geflf"]
+[ext_resource type="AudioStream" uid="uid://cwkf0x3k1r2kw" path="res://assets/sounds/buton_03.wav" id="7_crctu"]
 
 [sub_resource type="Theme" id="Theme_all2k"]
 
@@ -79,6 +80,10 @@ text = "ÇIK GİT"
 layout_mode = 2
 text = "Ayarlar"
 
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "By AbiSoft Ekibi"
+
 [node name="CenterContainer" type="CenterContainer" parent="MarginContainer/HBoxContainer"]
 z_index = -1
 layout_mode = 2
@@ -90,6 +95,10 @@ layout_mode = 2
 texture = ExtResource("4_geflf")
 expand_mode = 1
 stretch_mode = 3
+
+[node name="menusound" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(429, 382)
+stream = ExtResource("7_crctu")
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]

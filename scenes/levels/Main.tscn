@@ -9,12 +9,12 @@
 [ext_resource type="Texture2D" uid="uid://c0phqtjn8ogr3" path="res://assets/sprites/tile/yol.png" id="4_ku760"]
 [ext_resource type="Texture2D" uid="uid://drohh5bnwqxvy" path="res://assets/sprites/tile/yolSerit.png" id="5_sjicx"]
 [ext_resource type="PackedScene" uid="uid://cx5xkbk0f7w2b" path="res://scenes/levels/pause_menu.tscn" id="7_65di4"]
-[ext_resource type="Script" uid="uid://bek758c1i36bq" path="res://scripts/player/movement.gd" id="7_qo7a2"]
 [ext_resource type="Texture2D" uid="uid://mdxlm7ea5hnw" path="res://assets/sprites/jan_karaca/idle/1.png" id="9_fl1ji"]
 [ext_resource type="Script" uid="uid://beir6rqbou2tw" path="res://scripts/player/movementenemy.gd" id="9_if38b"]
 [ext_resource type="Texture2D" uid="uid://yxtwa442lfk0" path="res://assets/sprites/jan_karaca/idle/2.png" id="10_if38b"]
 [ext_resource type="Texture2D" uid="uid://0iq7kfb5ya2d" path="res://assets/sprites/jan_karaca/idle/3.png" id="11_ki7k8"]
 [ext_resource type="Texture2D" uid="uid://dpp0nhcpy0i5o" path="res://assets/sprites/jan_karaca/idle/4.png" id="12_p2hyx"]
+[ext_resource type="PackedScene" uid="uid://3jjw4lweasog" path="res://scenes/levels/radiopark.tscn" id="15_p2hyx"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_if38b"]
 vertices = PackedVector2Array(512, 512, -512, 512, -512, -512, 512, -512)
@@ -156,7 +156,6 @@ layer_0/tile_data = PackedInt32Array(65534, 4, 0, 65535, 4, 0, 0, 4, 0, 1, 4, 0,
 
 [node name="Player" parent="." instance=ExtResource("1_xnrmx")]
 position = Vector2(-2437, -2630)
-script = ExtResource("7_qo7a2")
 
 [node name="Pause Menu" parent="Player" instance=ExtResource("7_65di4")]
 metadata/_edit_use_anchors_ = true
@@ -209,5 +208,11 @@ position = Vector2(2, 363)
 shape = SubResource("CircleShape2D_c2fwb")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="CharacterBody2D"]
+
+[node name="Radiopark" parent="." instance=ExtResource("15_p2hyx")]
+position = Vector2(7984, -30)
+
+[node name="Radiopark2" parent="." instance=ExtResource("15_p2hyx")]
+position = Vector2(23336, -6208)
 
 [connection signal="input_event" from="CharacterBody2D" to="CharacterBody2D" method="_on_input_event"]

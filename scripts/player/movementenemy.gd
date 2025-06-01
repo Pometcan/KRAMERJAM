@@ -7,7 +7,6 @@ var movement_speed = 500
 
 func _ready(): 
 	call_deferred("seeker_setup")
-	
 	pass
 	
 func seeker_setup():
