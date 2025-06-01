@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://y3y3t7vskgr3"
-path="res://.godot/imported/jan_karaca.png-c82b3a21251e00f547c5d960382826b4.ctex"
+uid="uid://c5qf2gix3134d"
+path="res://.godot/imported/menubutton.png-63a3fbff28b380f3ca89c7c068678702.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/jan_karaca.png"
-dest_files=["res://.godot/imported/jan_karaca.png-c82b3a21251e00f547c5d960382826b4.ctex"]
+source_file="res://assets/sprites/gui/menubutton.png"
+dest_files=["res://.godot/imported/menubutton.png-63a3fbff28b380f3ca89c7c068678702.ctex"]
 
 [params]
 

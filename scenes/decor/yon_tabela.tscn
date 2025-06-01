@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbunjr4b3msef"]
+
+[ext_resource type="Script" uid="uid://byg2vd2werybn" path="res://scenes/decor/yon_tabela.gd" id="1_5hygy"]
+[ext_resource type="Texture2D" uid="uid://v0q7sfigt1nb" path="res://assets/sprites/decor/direk.png" id="1_7hhe1"]
+[ext_resource type="Texture2D" uid="uid://mw1jtdui7t7t" path="res://assets/sprites/decor/donmetabela.png" id="2_5hygy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5hygy"]
+size = Vector2(30, 158.5)
+
+[node name="YonTabela" type="Area2D"]
+script = ExtResource("1_5hygy")
+
+[node name="Direk" type="Sprite2D" parent="."]
+texture = ExtResource("1_7hhe1")
+
+[node name="Donmetabela" type="Sprite2D" parent="."]
+position = Vector2(1, 278)
+texture = ExtResource("2_5hygy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+y_sort_enabled = true
+position = Vector2(-27, 31)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_5hygy")

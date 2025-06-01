@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+Main="*res://scenes/main.gd"
 
 [editor_plugins]
 
@@ -81,6 +82,10 @@ transform={
 [input_devices]
 
 pointing/canvas_textures/default_texture_filter=1
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://assets/dialog/signs.dialogue")
 
 [rendering]
 

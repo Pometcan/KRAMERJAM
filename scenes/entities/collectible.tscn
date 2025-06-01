@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=3 uid="uid://bje58hth8nruf"]
 
 [ext_resource type="Script" uid="uid://nxe856y36r3k" path="res://scripts/collectible/collectible.gd" id="1_xyy1n"]
-[ext_resource type="Texture2D" uid="uid://kmw362xqxt1a" path="res://assets/sprites/coin.png" id="2_y3nx4"]
+[ext_resource type="Texture2D" uid="uid://kmw362xqxt1a" path="res://assets/sprites/decor/coin.png" id="2_y3nx4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6y5bh"]
 size = Vector2(30, 32)

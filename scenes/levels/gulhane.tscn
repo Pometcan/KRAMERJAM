@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://ckbbbdcm3pxe"]
+[gd_scene load_steps=8 format=3 uid="uid://ckbbbdcm3pxe"]
 
 [ext_resource type="Texture2D" uid="uid://n2g34tx737ud" path="res://assets/sprites/tile/tile.png" id="1_belnk"]
 [ext_resource type="PackedScene" uid="uid://dnn5j1bgnt632" path="res://scenes/decor/agac.tscn" id="3_belnk"]
 [ext_resource type="PackedScene" uid="uid://cucadinqdwtx1" path="res://scenes/decor/cardak.tscn" id="4_rlg08"]
+[ext_resource type="PackedScene" uid="uid://bbunjr4b3msef" path="res://scenes/decor/yon_tabela.tscn" id="5_b8vpy"]
 [ext_resource type="PackedScene" uid="uid://bn5m0b686ecwt" path="res://scenes/entities/player.tscn" id="11_6c0iu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b8vpy"]
@@ -40,7 +41,7 @@ layer_0/tile_data = PackedInt32Array(65534, 5, 0, 65535, 131077, 0, 0, 5, 3, 131
 
 [node name="Player" parent="." instance=ExtResource("11_6c0iu")]
 z_index = 4
-position = Vector2(9534, -1466)
+position = Vector2(-85, -2201)
 
 [node name="decor" type="StaticBody2D" parent="."]
 z_index = 2
@@ -85,6 +86,9 @@ position = Vector2(-5802, 1643)
 [node name="Agac3" parent="decor" instance=ExtResource("3_belnk")]
 z_index = 2
 position = Vector2(-3676, 2549)
+
+[node name="gulhane_tabela" parent="decor" instance=ExtResource("5_b8vpy")]
+position = Vector2(-1276, -4041)
 
 [node name="Carkad" parent="." instance=ExtResource("4_rlg08")]
 z_index = 2

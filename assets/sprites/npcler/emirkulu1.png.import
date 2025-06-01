@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4sexfs55mc1j"
-path="res://.godot/imported/jan karaca.png-5db1422e0345aff7af251649e9569988.ctex"
+uid="uid://cwo01pmvjdb8x"
+path="res://.godot/imported/emirkulu1.png-775f2ee847afafec1dfb23f3aecfe9eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/jan karaca.png"
-dest_files=["res://.godot/imported/jan karaca.png-5db1422e0345aff7af251649e9569988.ctex"]
+source_file="res://assets/sprites/npcler/emirkulu1.png"
+dest_files=["res://.godot/imported/emirkulu1.png-775f2ee847afafec1dfb23f3aecfe9eb.ctex"]
 
 [params]
 

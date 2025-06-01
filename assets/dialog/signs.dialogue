@@ -1,0 +1,9 @@
+~ Dur
+DUR: Dur knk
+Ufuk: Yoooooğk.
+set Main.able_to_move = true
+=> END
+~ gulhane_tabela
+Yer: Gülhane Parkı
+set Main.able_to_move = true
+=> END

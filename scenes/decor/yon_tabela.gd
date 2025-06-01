@@ -1,6 +1,6 @@
 extends Area2D
 
-@onready var player: Player = $"../Player"
+@onready var player: Player = $"../../Player"
 @export var dialogue_resource: DialogueResource
 var i = 0
 var area_names = [""]
@@ -16,9 +16,8 @@ func _process(_delta: float) -> void:
 		area_names[i] = area.name
 		i += 1
 		if area.name == "interractArea":
-			if "interractArea" in area_names and Input.is_action_pressed("interract"):
+			if "interractArea" in area_names and Input.is_action_just_pressed("interract"):
 				Main.able_to_move = false
-				DialogueManager.show_example_dialogue_balloon(load("res://assets/dialog/signs.dialogue"), "Dur")
+				DialogueManager.show_example_dialogue_balloon(load("res://assets/dialog/signs.dialogue"), name)
 				player.velocity = Vector2.ZERO
 				player.direction = Vector2.ZERO
-				queue_free()

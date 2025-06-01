@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcpv1g6monmue"
-path="res://.godot/imported/cevizagasi.png-0d0912d4ecf5e671c74bf9fdb52e2d09.ctex"
+uid="uid://v0q7sfigt1nb"
+path="res://.godot/imported/direk.png-9287da5d26dc6717d805281fedfcce15.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/cevizagasi.png"
-dest_files=["res://.godot/imported/cevizagasi.png-0d0912d4ecf5e671c74bf9fdb52e2d09.ctex"]
+source_file="res://assets/sprites/decor/direk.png"
+dest_files=["res://.godot/imported/direk.png-9287da5d26dc6717d805281fedfcce15.ctex"]
 
 [params]
 

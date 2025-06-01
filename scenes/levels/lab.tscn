@@ -35,6 +35,7 @@ texture_region_size = Vector2i(1024, 1024)
 0:2/0 = 0
 0:2/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_j302q")
 1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 2:2/0 = 0
 2:2/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_vuu1o")
 3:2/0 = 0

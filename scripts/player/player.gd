@@ -1,7 +1,7 @@
 extends CharacterBody2D
 class_name Player
 
-const SPEED := 100 * 600
+const SPEED := 200 * 600
 var direction := Vector2(0.0,0.0)
 var h_axis := 0.0
 var v_axis := 0.0
@@ -11,13 +11,12 @@ var friction := 0.05
 var moving_to_mouse := false
 var in_bounds := true
 var original_scale := scale
-var able_to_move := true
 var inventory = []
 var running = false
+var form = 1
 
 @onready var player_sprite: AnimatedSprite2D = $playerSprite
 @onready var interract_area: Area2D = $interractArea
-var form = 1
 
 func _ready() -> void:
 	pass
@@ -26,7 +25,7 @@ func _physics_process(_delta: float) -> void:
 	###
 	###MOVEMENT
 	###
-	if velocity.length() >= 2000:
+	if velocity.length() >= 4000:
 		player_sprite.play("run_"+str(form))
 	elif velocity.length() != 0:
 		player_sprite.play("walk_"+str(form))
@@ -38,9 +37,9 @@ func _physics_process(_delta: float) -> void:
 		
 	else: 
 		running = false
-	if able_to_move and not moving_to_mouse:
+	if Main.able_to_move and not moving_to_mouse:
 		velocity = Vector2(0,0)
-	if able_to_move and in_bounds:
+	if Main.able_to_move and in_bounds:
 		#mouse movement
 		if Input.is_action_pressed("left_click"):
 			mouse_pos = get_global_mouse_position()

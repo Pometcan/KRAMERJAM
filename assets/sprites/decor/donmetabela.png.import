@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1tret38dw8h0"
-path="res://.godot/imported/jam karaca2.png-3aec1752720f0aa62e43526695d006ac.ctex"
+uid="uid://mw1jtdui7t7t"
+path="res://.godot/imported/donmetabela.png-8e991804e879bbaf8cd01e281ef35df8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/jam karaca2.png"
-dest_files=["res://.godot/imported/jam karaca2.png-3aec1752720f0aa62e43526695d006ac.ctex"]
+source_file="res://assets/sprites/decor/donmetabela.png"
+dest_files=["res://.godot/imported/donmetabela.png-8e991804e879bbaf8cd01e281ef35df8.ctex"]
 
 [params]
 

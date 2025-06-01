@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgb8a0gsp1rga"
-path="res://.godot/imported/walk.png-cac9181a44ae289888ec8fca25dc248b.ctex"
+uid="uid://722m6jkty2ss"
+path="res://.godot/imported/biricimsupienci.png-0e99f0c463d553c44014b585a4c9f972.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/muhittin/run/walk.png"
-dest_files=["res://.godot/imported/walk.png-cac9181a44ae289888ec8fca25dc248b.ctex"]
+source_file="res://assets/sprites/npcler/biricimsupienci.png"
+dest_files=["res://.godot/imported/biricimsupienci.png-0e99f0c463d553c44014b585a4c9f972.ctex"]
 
 [params]
 

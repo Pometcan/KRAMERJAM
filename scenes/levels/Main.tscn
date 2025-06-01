@@ -1,8 +1,10 @@
-[gd_scene load_steps=27 format=3 uid="uid://cqsjkw1tcsisu"]
+[gd_scene load_steps=28 format=3 uid="uid://cqsjkw1tcsisu"]
 
+[ext_resource type="Script" uid="uid://dvejn7jpoiv18" path="res://scenes/main.gd" id="1_p2hyx"]
 [ext_resource type="Texture2D" uid="uid://n2g34tx737ud" path="res://assets/sprites/tile/tile.png" id="1_wplmo"]
 [ext_resource type="PackedScene" uid="uid://bn5m0b686ecwt" path="res://scenes/entities/player.tscn" id="1_xnrmx"]
 [ext_resource type="PackedScene" uid="uid://bje58hth8nruf" path="res://scenes/entities/collectible.tscn" id="2_wplmo"]
+[ext_resource type="Resource" uid="uid://bp042pedej6m0" path="res://assets/dialog/signs.dialogue" id="3_ki7k8"]
 [ext_resource type="Texture2D" uid="uid://dflnee0ip7xdg" path="res://assets/sprites/house/balkon1.png" id="4_fl1ji"]
 [ext_resource type="Texture2D" uid="uid://2hxbsusaj2rf" path="res://assets/sprites/house/balkon.png" id="5_if38b"]
 [ext_resource type="Texture2D" uid="uid://c34ntxjoldxqg" path="res://assets/sprites/house/binaflatdark.png" id="6_ki7k8"]
@@ -33,61 +35,70 @@ texture_region_size = Vector2i(1024, 1024)
 1:3/0 = 0
 2:3/0 = 0
 3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSet" id="TileSet_c2fwb"]
 tile_size = Vector2i(1024, 1024)
+physics_layer_0/collision_layer = 1
 sources/5 = SubResource("TileSetAtlasSource_fl1ji")
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vcsgt"]
-size = Vector2(138, 81)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jp52f"]
 texture = ExtResource("4_fl1ji")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2kmbh"]
 texture = ExtResource("5_if38b")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pd3pq"]
 texture = ExtResource("6_ki7k8")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y2nl4"]
 texture = ExtResource("7_p2hyx")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i0j5j"]
 texture = ExtResource("8_65di4")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fi461"]
 texture = ExtResource("9_c2fwb")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_68rqe"]
 texture = ExtResource("10_fy668")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vl1nj"]
 texture = ExtResource("11_wgg2v")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rpr4u"]
 texture = ExtResource("12_h3at4")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSet" id="TileSet_sng4w"]
 tile_size = Vector2i(1024, 1024)
+physics_layer_0/collision_layer = 1
 sources/9 = SubResource("TileSetAtlasSource_rpr4u")
 sources/10 = SubResource("TileSetAtlasSource_jp52f")
 sources/11 = SubResource("TileSetAtlasSource_2kmbh")
@@ -100,6 +111,7 @@ sources/17 = SubResource("TileSetAtlasSource_vl1nj")
 
 [node name="Main" type="Node2D"]
 y_sort_enabled = true
+script = ExtResource("1_p2hyx")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_c2fwb")
@@ -111,27 +123,9 @@ layer_0/tile_data = PackedInt32Array(65535, 131077, 2, 0, 131077, 1, 131070, 655
 layer_1/name = "Layer1"
 layer_1/tile_data = PackedInt32Array(-196612, 131077, 3, -196611, 131077, 3, -196610, 131077, 3, -262136, 131077, 3, -262135, 131077, 3, -262134, 131077, 3, -65522, 131077, 1342177283, 14, 131077, 1342177283, 65550, 131077, 1342177283, -8, 131077, 1610612739, 65528, 131077, 1610612739, 131064, 131077, 1610612739)
 
-[node name="Ground" type="Area2D" parent="."]
-visible = false
-position = Vector2(198, -16)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
-position = Vector2(1, -3)
-shape = SubResource("RectangleShape2D_vcsgt")
-debug_color = Color(0.609772, 0.522184, 0.380033, 0.42)
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Ground"]
-position = Vector2(-112, 52)
-shape = SubResource("RectangleShape2D_vcsgt")
-debug_color = Color(0.609772, 0.522184, 0.380033, 0.42)
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Ground"]
-position = Vector2(-232, 5)
-shape = SubResource("RectangleShape2D_vcsgt")
-debug_color = Color(0.609772, 0.522184, 0.380033, 0.42)
-
 [node name="item" parent="." instance=ExtResource("2_wplmo")]
 position = Vector2(-1427, 47)
+dialogue_resource = ExtResource("3_ki7k8")
 
 [node name="item2" parent="." instance=ExtResource("2_wplmo")]
 position = Vector2(-1001, -486)
