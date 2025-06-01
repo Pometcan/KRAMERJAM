@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://cqsjkw1tcsisu"]
+[gd_scene load_steps=30 format=3 uid="uid://cqsjkw1tcsisu"]
 
 [ext_resource type="Texture2D" uid="uid://b3ybktsjsts6b" path="res://assets/sprites/tile/kaldirim1.png" id="1_lxnxd"]
 [ext_resource type="Script" uid="uid://b6nm38hmr2uku" path="res://scenes/levels/main.gd" id="1_p2hyx"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bx5gb5oa7btd5" path="res://assets/sprites/tile/kaldirimyukar1.png" id="3_bk7v4"]
 [ext_resource type="Texture2D" uid="uid://c0phqtjn8ogr3" path="res://assets/sprites/tile/yol.png" id="4_ku760"]
 [ext_resource type="Texture2D" uid="uid://drohh5bnwqxvy" path="res://assets/sprites/tile/yolSerit.png" id="5_sjicx"]
+[ext_resource type="PackedScene" uid="uid://cx5xkbk0f7w2b" path="res://scenes/levels/pause_menu.tscn" id="7_65di4"]
 [ext_resource type="Script" uid="uid://bek758c1i36bq" path="res://scripts/player/movement.gd" id="7_qo7a2"]
 [ext_resource type="Texture2D" uid="uid://mdxlm7ea5hnw" path="res://assets/sprites/jan_karaca/idle/1.png" id="9_fl1ji"]
 [ext_resource type="Script" uid="uid://beir6rqbou2tw" path="res://scripts/player/movementenemy.gd" id="9_if38b"]
@@ -156,6 +157,9 @@ layer_0/tile_data = PackedInt32Array(65534, 4, 0, 65535, 4, 0, 0, 4, 0, 1, 4, 0,
 [node name="Player" parent="." instance=ExtResource("1_xnrmx")]
 position = Vector2(-2437, -2630)
 script = ExtResource("7_qo7a2")
+
+[node name="Pause Menu" parent="Player" instance=ExtResource("7_65di4")]
+metadata/_edit_use_anchors_ = true
 
 [node name="item" parent="." instance=ExtResource("2_wplmo")]
 position = Vector2(90, 32)

@@ -1,5 +1,5 @@
 extends Node2D
-@onready var pause_menu: Control = $"Player/Camera2D/Pause Menu"
+@onready var pause_menu: Control = $"Player/Pause Menu"
 var paused = false 
 
 func _ready(): 

@@ -56,8 +56,13 @@ size_flags_vertical = 0
 theme_override_constants/separation = 20
 alignment = 1
 
+[node name="Dewam" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Devam Et"
+
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "ÇIK GİT"
 
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/Dewam" to="." method="_on_dewam_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
