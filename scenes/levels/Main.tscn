@@ -213,6 +213,6 @@ shape = SubResource("CircleShape2D_c2fwb")
 position = Vector2(7984, -30)
 
 [node name="Radiopark2" parent="." instance=ExtResource("15_p2hyx")]
-position = Vector2(23336, -6208)
+position = Vector2(48258, -9013)
 
 [connection signal="input_event" from="CharacterBody2D" to="CharacterBody2D" method="_on_input_event"]

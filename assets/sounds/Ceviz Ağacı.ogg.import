@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cvgkmadbdc4ns"
+path="res://.godot/imported/Ceviz Ağacı.ogg-8bfde5187c5a707144c202b865c892b3.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Ceviz Ağacı.ogg"
+dest_files=["res://.godot/imported/Ceviz Ağacı.ogg-8bfde5187c5a707144c202b865c892b3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
