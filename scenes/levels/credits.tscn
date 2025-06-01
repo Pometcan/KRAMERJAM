@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://nfx2dnfc353s"]
+[gd_scene load_steps=3 format=3 uid="uid://nfx2dnfc353s"]
 
 [ext_resource type="Script" uid="uid://1fun3x8seq7l" path="res://scenes/levels/credits.gd" id="1_kxfi0"]
-[ext_resource type="PackedScene" uid="uid://b7nrpsnu3sgix" path="res://scenes/levels/main_menu.tscn" id="2_fhg1p"]
 
 [sub_resource type="Theme" id="Theme_2wlhp"]
 
@@ -13,7 +12,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_kxfi0")
-start_scene = ExtResource("2_fhg1p")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_direction = 4

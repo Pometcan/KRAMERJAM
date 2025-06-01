@@ -161,6 +161,16 @@ script = ExtResource("7_qo7a2")
 [node name="Pause Menu" parent="Player" instance=ExtResource("7_65di4")]
 metadata/_edit_use_anchors_ = true
 
+[node name="Label" type="Label" parent="Player"]
+offset_left = 1307.0
+offset_top = 958.0
+offset_right = 1526.0
+offset_bottom = 1033.0
+scale = Vector2(5, 5)
+text = "E Karaktere dönüşmek 
+AWSD/SOL MOUSE Yürümek
+Q interaksiyon"
+
 [node name="item" parent="." instance=ExtResource("2_wplmo")]
 position = Vector2(90, 32)
 script = null

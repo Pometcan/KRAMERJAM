@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://b70tpa0ncriok"]
+[gd_scene load_steps=3 format=3 uid="uid://b70tpa0ncriok"]
 
 [ext_resource type="Script" uid="uid://cr5fic3ugh2uo" path="res://setting.gd" id="1_h3b85"]
-[ext_resource type="PackedScene" uid="uid://b7nrpsnu3sgix" path="res://scenes/levels/main_menu.tscn" id="2_hlmtr"]
 
 [sub_resource type="Theme" id="Theme_hlmtr"]
 
@@ -13,7 +12,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_h3b85")
-start_scene = ExtResource("2_hlmtr")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_direction = 4

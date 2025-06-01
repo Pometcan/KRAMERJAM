@@ -1,7 +1,6 @@
 extends Control
 
-@export var start_scene : PackedScene = null
-
+var start_scene = load("res://scenes/levels/main_menu.tscn")
 @onready var label_2: Label = $MarginContainer/VBoxContainer/Label2
 @onready var h_slider: HSlider = $MarginContainer/VBoxContainer/HSlider
 
