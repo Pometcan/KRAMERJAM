@@ -161,7 +161,7 @@ script = ExtResource("7_qo7a2")
 [node name="Pause Menu" parent="Player" instance=ExtResource("7_65di4")]
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="Player"]
+[node name="Tutorial-Label" type="Label" parent="Player"]
 offset_left = 1307.0
 offset_top = 958.0
 offset_right = 1526.0
