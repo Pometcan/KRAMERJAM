@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bn5m0b686ecwt"]
+[gd_scene load_steps=25 format=3 uid="uid://bn5m0b686ecwt"]
 
 [ext_resource type="Script" uid="uid://bek758c1i36bq" path="res://scripts/player/player.gd" id="1_ucweq"]
 [ext_resource type="Texture2D" uid="uid://ddple1jwvmlaq" path="res://assets/sprites/ufuk/idle/idle.png" id="2_dnykm"]
@@ -172,13 +172,16 @@ radius = 130.138
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ss7kx"]
 size = Vector2(300, 963)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_ss7kx"]
+radius = 127.004
+
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_ucweq")
 
 [node name="playerSprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -2)
 sprite_frames = SubResource("SpriteFrames_dnykm")
-animation = &"walk_2"
+animation = &"idle_1"
 autoplay = "idle_1"
 
 [node name="walkCollision" type="CollisionShape2D" parent="."]
@@ -194,3 +197,10 @@ zoom = Vector2(0.2, 0.2)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interractArea"]
 position = Vector2(-150, 0)
 shape = SubResource("RectangleShape2D_ss7kx")
+
+[node name="gimp" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="gimp"]
+position = Vector2(29, 382)
+scale = Vector2(1.44, 0.480001)
+shape = SubResource("CircleShape2D_ss7kx")

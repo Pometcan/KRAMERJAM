@@ -87,7 +87,6 @@ func _physics_process(_delta: float) -> void:
 				velocity = direction * SPEED * _delta
 			else:
 				velocity = direction * SPEED * _delta * 2
-				
 			moving_to_mouse = false
 
 		if Input.is_action_pressed("ui_down") or Input.is_action_pressed("ui_up"):

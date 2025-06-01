@@ -1,0 +1,82 @@
+[gd_scene load_steps=10 format=3 uid="uid://ch6plvyn3goi8"]
+
+[ext_resource type="Texture2D" uid="uid://bgb8a0gsp1rga" path="res://assets/sprites/npcler/muhittin/run/walk.png" id="1_qqdga"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ybjxe"]
+atlas = ExtResource("1_qqdga")
+region = Rect2(0, 0, 560, 1200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2yq7m"]
+atlas = ExtResource("1_qqdga")
+region = Rect2(0, 0, 560, 1200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q4lj1"]
+atlas = ExtResource("1_qqdga")
+region = Rect2(560, 0, 560, 1200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ih48b"]
+atlas = ExtResource("1_qqdga")
+region = Rect2(1120, 0, 560, 1200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ufwwe"]
+atlas = ExtResource("1_qqdga")
+region = Rect2(1680, 0, 560, 1200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_inox7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ybjxe")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2yq7m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q4lj1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ih48b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ufwwe")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bfijm"]
+size = Vector2(1800, 700)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_c5rqy"]
+radius = 130.138
+
+[node name="kahveciDayi" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_inox7")
+animation = &"walk"
+autoplay = "idle"
+frame_progress = 0.93568
+
+[node name="dengerArea" type="Area2D" parent="."]
+position = Vector2(0, -2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dengerArea"]
+position = Vector2(-900, 355)
+shape = SubResource("RectangleShape2D_bfijm")
+
+[node name="walkCollision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 363)
+shape = SubResource("CircleShape2D_c5rqy")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -7)
+zoom = Vector2(0.2, 0.2)
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]

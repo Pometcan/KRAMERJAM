@@ -10,11 +10,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	print(Main.able_to_move)
-	i = 0
 	for area in get_overlapping_areas():
-		area_names[i] = area.name
-		i += 1
 		if area.name == "interractArea":
 			if "interractArea" in area_names and Input.is_action_pressed("interract"):
 				Main.able_to_move = false
