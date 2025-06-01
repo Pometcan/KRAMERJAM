@@ -18,5 +18,9 @@ func _process(_delta: float) -> void:
 			if "interractArea" in area_names and Input.is_action_just_pressed("interract"):
 				Main.able_to_move = false
 				DialogueManager.show_example_dialogue_balloon(load("res://assets/dialog/signs.dialogue"), name)
+				if Main.teleport_ready:
+					load("res://scenes/levels/"+ name +".tscn")
+					print("test")
+					Main.teleport_ready = false
 				player.velocity = Vector2.ZERO
 				player.direction = Vector2.ZERO

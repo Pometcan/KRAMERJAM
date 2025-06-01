@@ -8,6 +8,34 @@ Yer: Gülhane Parkı
 set Main.able_to_move = true
 => END
 ~ cankurtaran_tabela
-Yer:  Parkı
+Yer: Cankurtaran Parkı
+set Main.able_to_move = true
+=> END
+~ lab_tabela
+Yer: AbiScience Laboratuvarı
+set Main.able_to_move = true
+=> END
+~ gulhane
+Yer: Gülhane Parkına gitmek ister misin?
+set Main.able_to_move = true
+- Evet
+	set Main.teleport_ready = true
+- Hayır 
+	set Main.teleport_ready = false
+=> END
+~ lab
+Yer: AbiSoft Laboratuvarına gitmek ister misin?
+set Main.able_to_move = true
+- Evet
+	set Main.teleport_ready = true
+- Hayır 
+	set Main.teleport_ready = false
+=> END
+~ cankurtaran_mahallesi
+Yer: Cankurtaran Mahallesine gitmek ister misin?
+- Evet
+	set Main.teleport_ready = true
+- Hayır 
+	set Main.teleport_ready = false
 set Main.able_to_move = true
 => END

@@ -1,70 +1,72 @@
-[gd_scene load_steps=34 format=4 uid="uid://cqsjkw1tcsisu"]
+[gd_scene load_steps=36 format=4 uid="uid://cqsjkw1tcsisu"]
 
-[ext_resource type="Script" uid="uid://dvejn7jpoiv18" path="res://scenes/main.gd" id="1_p2hyx"]
-[ext_resource type="Texture2D" uid="uid://n2g34tx737ud" path="res://assets/sprites/tile/tile.png" id="1_wplmo"]
-[ext_resource type="Texture2D" uid="uid://dka72m0r2t0dt" path="res://assets/sprites/tile/lab_tiles.png" id="2_47jnw"]
-[ext_resource type="Texture2D" uid="uid://dflnee0ip7xdg" path="res://assets/sprites/house/balkon1.png" id="4_fl1ji"]
-[ext_resource type="Texture2D" uid="uid://2hxbsusaj2rf" path="res://assets/sprites/house/balkon.png" id="5_if38b"]
-[ext_resource type="Texture2D" uid="uid://c34ntxjoldxqg" path="res://assets/sprites/house/binaflatdark.png" id="6_ki7k8"]
-[ext_resource type="Texture2D" uid="uid://xgh25fxl8fs3" path="res://assets/sprites/house/binaflatlight.png" id="7_p2hyx"]
-[ext_resource type="Texture2D" uid="uid://coooim80dhmx8" path="res://assets/sprites/house/binaserit.png" id="8_65di4"]
-[ext_resource type="Texture2D" uid="uid://daa5uu1vyktxy" path="res://assets/sprites/house/binastripeddark.png" id="9_c2fwb"]
-[ext_resource type="Texture2D" uid="uid://l5c1mlahcvb6" path="res://assets/sprites/house/binastripedlight.png" id="10_fy668"]
-[ext_resource type="Texture2D" uid="uid://clhjrupey4rcn" path="res://assets/sprites/house/pencere.png" id="11_wgg2v"]
-[ext_resource type="Texture2D" uid="uid://icp6aujv0lfl" path="res://assets/sprites/house/1000000853.png" id="12_h3at4"]
-[ext_resource type="Texture2D" uid="uid://bilx71f76mw55" path="res://assets/sprites/decor/thumbnail_dur.png" id="13_if38b"]
-[ext_resource type="PackedScene" uid="uid://bn5m0b686ecwt" path="res://scenes/entities/player.tscn" id="13_pqond"]
+[ext_resource type="Script" uid="uid://dvejn7jpoiv18" path="res://scenes/main.gd" id="1_2h1vb"]
+[ext_resource type="Texture2D" uid="uid://dflnee0ip7xdg" path="res://assets/sprites/house/balkon1.png" id="2_k6062"]
+[ext_resource type="Texture2D" uid="uid://2hxbsusaj2rf" path="res://assets/sprites/house/balkon.png" id="3_28xw4"]
+[ext_resource type="Texture2D" uid="uid://c34ntxjoldxqg" path="res://assets/sprites/house/binaflatdark.png" id="4_hmdmp"]
+[ext_resource type="Texture2D" uid="uid://xgh25fxl8fs3" path="res://assets/sprites/house/binaflatlight.png" id="5_aareu"]
+[ext_resource type="Texture2D" uid="uid://coooim80dhmx8" path="res://assets/sprites/house/binaserit.png" id="6_yalik"]
+[ext_resource type="Texture2D" uid="uid://daa5uu1vyktxy" path="res://assets/sprites/house/binastripeddark.png" id="7_6mjr7"]
+[ext_resource type="Texture2D" uid="uid://l5c1mlahcvb6" path="res://assets/sprites/house/binastripedlight.png" id="8_83ows"]
+[ext_resource type="Texture2D" uid="uid://clhjrupey4rcn" path="res://assets/sprites/house/pencere.png" id="9_cm51k"]
+[ext_resource type="Texture2D" uid="uid://icp6aujv0lfl" path="res://assets/sprites/house/1000000853.png" id="10_ducvy"]
+[ext_resource type="Texture2D" uid="uid://dka72m0r2t0dt" path="res://assets/sprites/tile/lab_tiles.png" id="11_wasw7"]
+[ext_resource type="Texture2D" uid="uid://n2g34tx737ud" path="res://assets/sprites/tile/tile.png" id="12_p5jjo"]
+[ext_resource type="Texture2D" uid="uid://bilx71f76mw55" path="res://assets/sprites/decor/thumbnail_dur.png" id="13_vu7up"]
+[ext_resource type="PackedScene" uid="uid://bn5m0b686ecwt" path="res://scenes/entities/player.tscn" id="14_gr5q0"]
+[ext_resource type="PackedScene" uid="uid://bbunjr4b3msef" path="res://scenes/decor/yon_tabela.tscn" id="15_hmm3r"]
+[ext_resource type="PackedScene" uid="uid://dvddeo0ji0g1n" path="res://scenes/decor/door.tscn" id="16_f567i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p2hyx"]
-texture = ExtResource("4_fl1ji")
+texture = ExtResource("2_k6062")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_65di4"]
-texture = ExtResource("5_if38b")
+texture = ExtResource("3_28xw4")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c2fwb"]
-texture = ExtResource("6_ki7k8")
+texture = ExtResource("4_hmdmp")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fy668"]
-texture = ExtResource("7_p2hyx")
+texture = ExtResource("5_aareu")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wgg2v"]
-texture = ExtResource("8_65di4")
+texture = ExtResource("6_yalik")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h3at4"]
-texture = ExtResource("9_c2fwb")
+texture = ExtResource("7_6mjr7")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jp52f"]
-texture = ExtResource("10_fy668")
+texture = ExtResource("8_83ows")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2kmbh"]
-texture = ExtResource("11_wgg2v")
+texture = ExtResource("9_cm51k")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pd3pq"]
-texture = ExtResource("12_h3at4")
+texture = ExtResource("10_ducvy")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-512, -512, 512, -512, 512, 512, -512, 512)
@@ -84,7 +86,7 @@ sources/16 = SubResource("TileSetAtlasSource_jp52f")
 sources/17 = SubResource("TileSetAtlasSource_2kmbh")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6yk8k"]
-texture = ExtResource("2_47jnw")
+texture = ExtResource("11_wasw7")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
 1:0/0 = 0
@@ -119,7 +121,7 @@ outlines = Array[PackedVector2Array]([PackedVector2Array(-512, -512, 512, -512, 
 agent_radius = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ki7k8"]
-texture = ExtResource("1_wplmo")
+texture = ExtResource("12_p5jjo")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
 0:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_pqond")
@@ -166,7 +168,7 @@ sources/5 = SubResource("TileSetAtlasSource_ki7k8")
 sources/0 = SubResource("TileSetAtlasSource_6yk8k")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_47jnw"]
-texture = ExtResource("2_47jnw")
+texture = ExtResource("11_wasw7")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
 1:0/0 = 0
@@ -182,7 +184,7 @@ texture_region_size = Vector2i(1024, 1024)
 3:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qwpy2"]
-texture = ExtResource("1_wplmo")
+texture = ExtResource("12_p5jjo")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
 1:0/0 = 0
@@ -210,7 +212,7 @@ sources/1 = SubResource("TileSetAtlasSource_qwpy2")
 
 [node name="Cankurtaran_Sokak" type="Node2D"]
 y_sort_enabled = true
-script = ExtResource("1_p2hyx")
+script = ExtResource("1_2h1vb")
 
 [node name="house" type="TileMapLayer" parent="."]
 tile_set = SubResource("TileSet_sng4w")
@@ -257,13 +259,23 @@ tile_set = SubResource("TileSet_d48hw")
 [node name="ThumbnailDur2" type="Sprite2D" parent="."]
 z_index = 1
 position = Vector2(11577, -1876)
-texture = ExtResource("13_if38b")
+texture = ExtResource("13_vu7up")
 
 [node name="ThumbnailDur" type="Sprite2D" parent="."]
 z_index = 1
 position = Vector2(-4295, -1889)
 scale = Vector2(0.467773, 1)
-texture = ExtResource("13_if38b")
+texture = ExtResource("13_vu7up")
 
-[node name="Player" parent="." instance=ExtResource("13_pqond")]
+[node name="Player" parent="." instance=ExtResource("14_gr5q0")]
 z_index = 4
+position = Vector2(14471, 269)
+
+[node name="cankurtaran_tabela" parent="." instance=ExtResource("15_hmm3r")]
+position = Vector2(11754, 1606)
+
+[node name="gulhane" parent="." instance=ExtResource("16_f567i")]
+position = Vector2(16642, 550)
+
+[node name="lab" parent="." instance=ExtResource("16_f567i")]
+position = Vector2(-9513, 544)

@@ -1,8 +1,10 @@
-[gd_scene load_steps=9 format=4 uid="uid://bmvwfmbqjbvoe"]
+[gd_scene load_steps=11 format=4 uid="uid://bmvwfmbqjbvoe"]
 
 [ext_resource type="Texture2D" uid="uid://dka72m0r2t0dt" path="res://assets/sprites/tile/lab_tiles.png" id="1_j302q"]
 [ext_resource type="PackedScene" uid="uid://bn5m0b686ecwt" path="res://scenes/entities/player.tscn" id="2_vuu1o"]
 [ext_resource type="Texture2D" uid="uid://n2g34tx737ud" path="res://assets/sprites/tile/tile.png" id="2_w4gd0"]
+[ext_resource type="PackedScene" uid="uid://bbunjr4b3msef" path="res://scenes/decor/yon_tabela.tscn" id="3_w4gd0"]
+[ext_resource type="PackedScene" uid="uid://dvddeo0ji0g1n" path="res://scenes/decor/door.tscn" id="4_2yitm"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_j302q"]
 vertices = PackedVector2Array(512, 512, -512, 512, -512, -512, 512, -512)
@@ -72,6 +74,9 @@ sources/1 = SubResource("TileSetAtlasSource_2yitm")
 
 [node name="Lab" type="Node2D"]
 
+[node name="Player" parent="." instance=ExtResource("2_vuu1o")]
+position = Vector2(-7209, -510)
+
 [node name="TileMap" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAD3/wkAAAACAAIAADD4/wkAAAACAAIAADD2/wkAAAACAAIAADD1/wkAAAACAAIAADD0/wkAAAACAAIAADDz/wkAAAACAAIAADD5/wgAAAACAAIAADD6/wgAAAACAAIAADD7/wgAAAACAAIAADD8/wgAAAACAAIAADD9/wgAAAACAAIAADD+/wgAAAACAAIAADD//wgAAAACAAIAADAAAAgAAAACAAIAADABAAgAAAACAAIAADACAAgAAAACAAIAADADAAgAAAACAAIAADAEAAgAAAACAAIAADAFAAgAAAACAAIAADAGAAgAAAACAAIAADAHAAkAAAACAAIAADAIAAkAAAACAAIAADAJAAkAAAACAAIAADAKAAkAAAACAAIAADALAAkAAAACAAIAADD5//n/AAACAAIAADD4//n/AAACAAIAADD3//n/AAACAAIAADD2//n/AAACAAIAADD1//n/AAACAAIAADD0//n/AAACAAIAADDz//n/AAACAAIAADD+//j/AAACAAIAADD9//j/AAACAAIAADD8//j/AAACAAIAADD7//j/AAACAAIAADD6//j/AAACAAIAADD5//j/AAACAAIAADABAPj/AAACAAIAADACAPj/AAACAAIAADADAPj/AAACAAIAADAEAPj/AAACAAIAADAFAPj/AAACAAIAADAGAPj/AAACAAIAADAKAPn/AAACAAIAADALAPn/AAACAAIAADAMAPn/AAACAAIAADAIAPn/AAACAAIAADAJAPn/AAACAAIAADAHAPn/AAACAAIAADAIAAEAAAACAAIAADAJAAEAAAACAAIAADAKAAEAAAACAAIAADALAAEAAAACAAIAADAMAAEAAAACAAIAADACAAAAAAACAAIAADADAAAAAAACAAIAADAEAAAAAAACAAIAADAFAAAAAAACAAIAADAGAAAAAAACAAIAADAHAAAAAAACAAIAADD5/wAAAAACAAIAADD6/wAAAAACAAIAADD7/wAAAAACAAIAADD8/wAAAAACAAIAADD9/wAAAAACAAIAADD4/wAAAAACAAIAADD3/wAAAQADAAQAAAD2////AQADAAQAAAD1////AQADAAQAAAD0////AQADAAQAAAD1//7/AAABAAIAAAD2//7/AAABAAIAAAD2//3/AAABAAIAAAD1//3/AAABAAIAAAD1//z/AAABAAIAAAD2//z/AAABAAIAAAD0//z/AAABAAIAAAD0//3/AAABAAIAAAD0//7/AAABAAIAAAD2/wAAAQADAAQAAAD1/wAAAQADAAQAAAD0/wAAAQADAAQAAADz//z/AAABAAIAAADz//3/AAABAAIAAADz//7/AAABAAIAAADz////AQADAAQAAADz/wAAAQADAAQAAADy////AQADAAQAAADy//7/AAABAAIAAADy//3/AAABAAIAAADy//z/AAABAAIAAADy/wAAAQADAAQAAAD3//7/AAABAAIAAAD3//3/AAABAAIAAAD3//z/AAABAAIAAAA=")
 tile_set = SubResource("TileSet_2yitm")
@@ -112,5 +117,9 @@ use_parent_material = true
 tile_map_data = PackedByteArray("AAADAPz/AAADAAAAAAAEAPz/AAADAAAAAAAFAPz/AAADAAAAAAAGAPz/AAADAAAAAAAHAPz/AAADAAAAAAAIAPv/AAADAAAAAAAJAPv/AAADAAAAAAAKAPv/AAADAAAAAAALAPv/AAADAAAAAAACAPz/AAADAAAAAAABAPv/AAADAAAAAAD+//v/AAADAAAAAAD9//z/AAADAAAAAAD8//z/AAADAAAAAAD7//z/AAADAAAAAAD6//z/AAADAAAAAAD5//z/AAADAAAAAAAEAP3/AAADAAIAAGD+/wEAAAACAAIAACABAAEAAAACAAIAACA=")
 tile_set = SubResource("TileSet_2yitm")
 
-[node name="Player" parent="." instance=ExtResource("2_vuu1o")]
-visible = false
+[node name="lab_tabela" parent="TileMap" instance=ExtResource("3_w4gd0")]
+position = Vector2(-7010, -1656)
+scale = Vector2(-1, 1)
+
+[node name="cankurtaran_mahallesi" parent="TileMap" instance=ExtResource("4_2yitm")]
+position = Vector2(-9522, 44)
