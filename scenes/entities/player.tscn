@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://bn5m0b686ecwt"]
+[gd_scene load_steps=9 format=3 uid="uid://bn5m0b686ecwt"]
 
 [ext_resource type="Script" uid="uid://beir6rqbou2tw" path="res://scripts/player/movementenemy.gd" id="1_5u6hq"]
 [ext_resource type="Texture2D" uid="uid://mdxlm7ea5hnw" path="res://assets/sprites/jan_karaca/idle/1.png" id="2_d4qa6"]
 [ext_resource type="Texture2D" uid="uid://yxtwa442lfk0" path="res://assets/sprites/jan_karaca/idle/2.png" id="3_ss7kx"]
 [ext_resource type="Texture2D" uid="uid://0iq7kfb5ya2d" path="res://assets/sprites/jan_karaca/idle/3.png" id="4_dnykm"]
 [ext_resource type="Texture2D" uid="uid://dpp0nhcpy0i5o" path="res://assets/sprites/jan_karaca/idle/4.png" id="5_c5rqy"]
+[ext_resource type="PackedScene" uid="uid://cx5xkbk0f7w2b" path="res://scenes/levels/pause_menu.tscn" id="6_d4qa6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dnykm"]
 animations = [{
@@ -77,3 +78,5 @@ shape = SubResource("CircleShape2D_c5rqy")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -7)
 zoom = Vector2(0.2, 0.2)
+
+[node name="Pause Menu" parent="Camera2D" instance=ExtResource("6_d4qa6")]
