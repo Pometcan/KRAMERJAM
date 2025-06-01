@@ -53,7 +53,7 @@ func _physics_process(_delta: float) -> void:
 			moving_to_mouse = true
 			
 		if moving_to_mouse:
-			if (mouse_pos - position).length() < SPEED/100:
+			if (mouse_pos - position).length() < SPEED/5000:
 				moving_to_mouse = false
 			else:
 				direction = (mouse_pos - position).normalized()

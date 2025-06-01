@@ -7,3 +7,7 @@ set Main.able_to_move = true
 Yer: Gülhane Parkı
 set Main.able_to_move = true
 => END
+~ cankurtaran_tabela
+Yer:  Parkı
+set Main.able_to_move = true
+=> END
