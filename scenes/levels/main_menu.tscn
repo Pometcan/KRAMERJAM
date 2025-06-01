@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://b7nrpsnu3sgix"]
+[gd_scene load_steps=8 format=3 uid="uid://b7nrpsnu3sgix"]
 
 [ext_resource type="Script" uid="uid://bl4w8cl511frb" path="res://scenes/levels/main_menu.gd" id="1_721jg"]
 [ext_resource type="Texture2D" uid="uid://bkt2r7al8ssno" path="res://assets/menu asset for now/title.png" id="1_leamy"]
-[ext_resource type="Texture2D" uid="uid://iq8sujq1nsov" path="res://assets/menu asset for now/characters.png" id="2_721jg"]
 [ext_resource type="PackedScene" uid="uid://cqsjkw1tcsisu" path="res://scenes/levels/Main.tscn" id="2_geflf"]
+[ext_resource type="PackedScene" uid="uid://nfx2dnfc353s" path="res://scenes/levels/credits.tscn" id="3_keln3"]
+[ext_resource type="PackedScene" uid="uid://b70tpa0ncriok" path="res://scenes/levels/settings.tscn" id="4_crctu"]
+[ext_resource type="Texture2D" uid="uid://b15e2p3nii2n7" path="res://assets/sprites/cevizagasi %30.png" id="4_geflf"]
 
 [sub_resource type="Theme" id="Theme_all2k"]
 
@@ -17,6 +19,8 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_721jg")
 start_scene = ExtResource("2_geflf")
+credits_scene = ExtResource("3_keln3")
+settings_scene = ExtResource("4_crctu")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_direction = 4
@@ -26,6 +30,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1, 1.01944)
 theme = SubResource("Theme_all2k")
 theme_override_constants/margin_left = 120
 theme_override_constants/margin_top = 80
@@ -34,18 +39,19 @@ theme_override_constants/margin_bottom = 80
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
-layout_direction = 4
+layout_direction = 2
 layout_mode = 2
-size_flags_horizontal = 6
+size_flags_horizontal = 0
 size_flags_vertical = 4
 theme_override_constants/separation = 20
 alignment = 1
 
 [node name="Logo" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 4
+size_flags_horizontal = 0
 size_flags_vertical = 0
 texture = ExtResource("1_leamy")
 
@@ -74,12 +80,16 @@ layout_mode = 2
 text = "Ayarlar"
 
 [node name="CenterContainer" type="CenterContainer" parent="MarginContainer/HBoxContainer"]
+z_index = -1
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 6
+size_flags_vertical = 4
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/CenterContainer"]
 layout_mode = 2
-texture = ExtResource("2_721jg")
+texture = ExtResource("4_geflf")
+expand_mode = 1
+stretch_mode = 3
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]

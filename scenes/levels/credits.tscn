@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://nfx2dnfc353s"]
+
+[ext_resource type="Script" uid="uid://1fun3x8seq7l" path="res://scenes/levels/credits.gd" id="1_kxfi0"]
+[ext_resource type="PackedScene" uid="uid://b7nrpsnu3sgix" path="res://scenes/levels/main_menu.tscn" id="2_fhg1p"]
+
+[sub_resource type="Theme" id="Theme_2wlhp"]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kxfi0")
+start_scene = ExtResource("2_fhg1p")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_direction = 4
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 1.01944)
+theme = SubResource("Theme_2wlhp")
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 80
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_direction = 2
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Uğur Dikici - Game Design, Programmer
+Şevki Buğra Düzyol - 2D Artist
+MehmetCan Polat - Programmer 
+Anıl Uzun - Programmer, Game Designer
+İlker Dündar - 2D Artist 
+"
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Menüye Dön"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
